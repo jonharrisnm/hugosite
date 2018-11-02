@@ -1,0 +1,13 @@
+baseURL: "https://vcix.ninja/"
+title: "VCIX Ninja"
+defaultContentLanguage: en
+languages:
+  en:
+    lang: en
+    languageName: English
+    weight: 1
+MetaDataFormat: "yaml"
+theme: "claritylight"
+
+permalinks:
+  posts: /:year/:month/:title/

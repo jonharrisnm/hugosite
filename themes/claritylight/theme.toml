@@ -1,0 +1,12 @@
+name = "Claritylight"
+license = "MIT"
+licenselink = "https://github.com/yourname/yourtheme/blob/master/LICENSE"
+description = "VMware Clarity UI Light Theme for Hugo"
+homepage = "https://vcix.ninja/"
+tags = []
+features = []
+min_version = "0.41"
+
+[author]
+  name = "Tom Burge"
+  homepage = "https://vcix.ninja"
