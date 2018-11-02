@@ -6,7 +6,7 @@
         <link rel= "stylesheet" type= "text/css" href="css/clarity-ui.min.css">
         <script type= "text/javascript" src="js/clarity-icons.min.js"></script>
         <script type= "text/javascript" src="js/custom-elements.min.js"></script>
-        <title>VCIX Ninja</title>
+        <title>{{ .Title }} - VCIX Ninja</title>
     </head>
     <body>
         <header class="header header-7">
@@ -32,14 +32,14 @@
         <div class="content-container" style="margin-left: 20px">
             <div class="content-area">
                 {{ block "main" . }}
-
+                    {{ .Content }}
                 {{ end }}
             </div>
             <nav class="sidenav">
                 <section class="sidenav-content">
                     <section class="nav-group">
-                        <input id="tabexample2" type="checkbox">
-                        <label for="tabexample2">Latest Posts</label>
+                        <input id="tabexample1" type="checkbox">
+                        <label for="tabexample1">Latest Posts</label>
                         <ul class="nav-list">
                             <li><a href="#" class="nav-link">Post 1</a></li>
                             <li><a href="#" class="nav-link">Post 2</a></li>
@@ -59,8 +59,8 @@
                         </ul>
                     </section>
                     <section class="nav-group">
-                        <input id="tabexample2" type="checkbox">
-                        <label for="tabexample2">Social</label>
+                        <input id="tabexample3" type="checkbox">
+                        <label for="tabexample3">Social</label>
                         <ul class="nav-list">
                             <li><a href="https://twitter.com/vcixninja" class="nav-link" target="_blank">Twitter</a></li>
                             <li><a href="https://www.linkedin.com/in/tomburge80/" class="nav-link" target="_blank">LinkedIn</a></li>

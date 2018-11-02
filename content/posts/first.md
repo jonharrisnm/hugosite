@@ -2,7 +2,7 @@
 title: "First"
 date: 2018-02-11T11:35:58+05:30
 Description: ""
-draft: true
+draft: false
 Tags: ["first"]
 Categories: ["Hugo"]
 

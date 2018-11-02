@@ -2,7 +2,7 @@
 title: "Second"
 date: 2018-10-30T12:04:31-05:00
 Description: ""
-draft: true
+draft: false
 Tags: ["second"]
 Categories: ["Hugo"]
 
