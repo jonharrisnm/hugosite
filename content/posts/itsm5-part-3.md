@@ -1,7 +1,7 @@
 ---
 title: "Configure ITSM 5.0 for ServiceNow Part 3"
 date: 2018-11-03T11:32:18-05:00
-draft: true
+draft: false
 type: "post"
 ---
 <h2>Installing and Configuring Plugin</h2>

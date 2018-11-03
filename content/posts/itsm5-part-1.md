@@ -2,7 +2,7 @@
 title: "Configure ITSM 5.0 for ServiceNow Part 1"
 author: "Tom Burge"
 date: 2018-11-03T11:32:14-05:00
-draft: true
+draft: false
 type: "post"
 ---
 
