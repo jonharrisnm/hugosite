@@ -4,5 +4,4 @@ date: 2018-10-30T13:12:54-05:00
 draft: false
 ---
 
-
-Hi there, you just reached my blog.
+This is well I will lay out all of the info for my homelab.
