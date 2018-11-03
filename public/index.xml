@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>VCIX Ninja</title>
+    <link>https://vcix.ninja/</link>
+    <description>Recent content on VCIX Ninja</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <lastBuildDate>Sat, 03 Nov 2018 11:32:18 -0500</lastBuildDate>
+    
+	<atom:link href="https://vcix.ninja/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Configure ITSM 5.0 for ServiceNow Part 3</title>
+      <link>https://vcix.ninja/2018/11/configure-itsm-5.0-for-servicenow-part-3/</link>
+      <pubDate>Sat, 03 Nov 2018 11:32:18 -0500</pubDate>
+      
+      <guid>https://vcix.ninja/2018/11/configure-itsm-5.0-for-servicenow-part-3/</guid>
+      <description>Installing and Configuring Plugin Now that we have finished requesting our instance and creating our MID server, we will move onto install and configuring the plugin.
+ Here we are starting at the home dashboard.   In the upper left filter, type update sets and click Update Sources.   Click Choose File and browse to the XML file you downloaded from the marketplace. Click Upload.   After the upload completes, you will be redirected to the Update Sets list.</description>
+    </item>
+    
+    <item>
+      <title>Configure ITSM 5.0 for ServiceNow Part 2</title>
+      <link>https://vcix.ninja/2018/11/configure-itsm-5.0-for-servicenow-part-2/</link>
+      <pubDate>Sat, 03 Nov 2018 11:32:16 -0500</pubDate>
+      
+      <guid>https://vcix.ninja/2018/11/configure-itsm-5.0-for-servicenow-part-2/</guid>
+      <description>Installing Mid Server Now that we have requested our instance, we can move onto creating a user for our mid server connection as well as configuring the mid server. This is where you will need to make sure that you have the Windows machine ready that I mentioned in the previous post.  In the search bar in the upper left, type User Administration. Click Users.   Click New. Fill out the details for the new mid server user.</description>
+    </item>
+    
+    <item>
+      <title>Configure ITSM 5.0 for ServiceNow Part 1</title>
+      <link>https://vcix.ninja/2018/11/configure-itsm-5.0-for-servicenow-part-1/</link>
+      <pubDate>Sat, 03 Nov 2018 11:32:14 -0500</pubDate>
+      
+      <guid>https://vcix.ninja/2018/11/configure-itsm-5.0-for-servicenow-part-1/</guid>
+      <description>Requesting Service Now Instance In this series, I will be configuring the brand new VMware vRealize Automation Plugin for ITSM 5.0 for ServiceNow London.
+You can acquire the plugin from here: https://marketplace.vmware.com/vsx/solutions/vmware-vrealize-automation-plug-in-for-itsm-5-0-0
+Download the XML plugin and the installation PDF.
+Pre-requisites:  vRealize Automation 7.5 configured with a tenant and necessary catalog items Windows Server 2012R2 or 2016 with Java 1.8.0_152 or above 
+First step will be to get a developer instance of Service Now if you don&amp;rsquo;t have one.</description>
+    </item>
+    
+    <item>
+      <title>About</title>
+      <link>https://vcix.ninja/about/</link>
+      <pubDate>Tue, 30 Oct 2018 13:12:54 -0500</pubDate>
+      
+      <guid>https://vcix.ninja/about/</guid>
+      <description> Tom Burge About me: I have been been IT for several years and I&amp;rsquo;m a virtualization enthusiast. I&amp;rsquo;m very passionate about automation and making life more efficient.
+Certs:    </description>
+    </item>
+    
+    <item>
+      <title>Home Lab</title>
+      <link>https://vcix.ninja/homelab/</link>
+      <pubDate>Tue, 30 Oct 2018 13:12:54 -0500</pubDate>
+      
+      <guid>https://vcix.ninja/homelab/</guid>
+      <description>Current Hardware:
+Hosts:
+3 x Dell PowerEdge R720s Each has:  2 x Intel E5-2660 @ 2.2Ghz 192GB ram 1 x Samsung EVO 860 250GB (vSAN SSD Cache) 5 x Samsung EVO 860 1TB (vSAN SSD Capacity) Dual 10GB ethernet 
+3 x SuperMicro Sys-E300-8Ds Each has:  1 x Intel D-1518 @ 2.2Ghz 64GB ram 1 x Crucial MX300 275GB m.2 (vSAN SSD Cache) 1 x Crucial MX300 1TB m.</description>
+    </item>
+    
+  </channel>
+</rss>

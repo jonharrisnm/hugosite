@@ -1,0 +1,125 @@
+<div class="main-container">
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel= "stylesheet" type= "text/css" href="/css/clarity-icons.min.css">
+        <link rel= "stylesheet" type= "text/css" href="/css/clarity-ui.min.css">
+        <script type= "text/javascript" src="/js/clarity-icons.min.js"></script>
+        <script type= "text/javascript" src="/js/custom-elements.min.js"></script>
+        <title>VCIX Ninja</title>
+    </head>
+    <body>
+        <header class="header header-7">
+        <div class="branding">
+            <a href="/">
+                <clr-icon shape="bullseye" class="is-solid"></clr-icon>
+            <span class="title">VCIX Ninja</span>
+            </a>
+        </div>
+        <div class="header-nav">
+            <nav class="header-nav">
+            <a href="/" class="nav-link"><span class="nav-text">Home</span></a>
+            <a href="/posts" class="nav-link"><span class="nav-text">Posts</span></a>
+            <a href="/homelab" class="nav-link"><span class="nav-text">HomeLab</span></a>
+            <a href="/about" class="nav-link"><span class="nav-text">About Me</span></a>
+            <a href="https://github.com/tomburge" class="nav-link" target="_blank"><span class="nav-text">GitHub</span></a>
+        </div>
+        <div class="header-actions">
+            <a href="#" class="nav-link nav-icon">
+                <clr-icon shape="cog" class="is-solid"></clr-icon>
+            </a>
+        </div>
+        </header>
+        <div class="content-container" style="margin-left: 20px">
+            <div class="content-area">
+                
+    
+    <h1>Configure ITSM 5.0 for ServiceNow Part 1</h1>
+    11-03-2018
+    <h2>Requesting Service Now Instance</h2>
+
+<p>In this series, I will be configuring the brand new VMware vRealize Automation Plugin for ITSM 5.0 for ServiceNow London.</p>
+
+<p>You can acquire the plugin from here: <a href="https://marketplace.vmware.com/vsx/solutions/vmware-vrealize-automation-plug-in-for-itsm-5-0-0">https://marketplace.vmware.com/vsx/solutions/vmware-vrealize-automation-plug-in-for-itsm-5-0-0</a></p>
+
+<p>Download the XML plugin and the installation PDF.</p>
+
+<p>Pre-requisites:<p>
+<ul>
+<li>vRealize Automation 7.5 configured with a tenant and necessary catalog items</li>
+<li>Windows Server 2012R2 or 2016 with Java 1.8.0_152 or above</li>
+</ul></p>
+
+<p>First step will be to get a developer instance of Service Now if you don&rsquo;t have one. If you do have one, you can skip to part 2.</p>
+
+<p>Open a browser and navigate to <a href="https://developer.servicenow.com/app.do#!/home">https://developer.servicenow.com/app.do#!/home</a>.
+<p>
+<img src="/img/snow/request-instance-01.png" width=800 />
+<p>
+Create an account if you don&rsquo;t have one. Log in if you do.
+<p>
+<img src="/img/snow/request-instance-02.png" width=800 />
+<p>
+Select <strong>Manage</strong> then <strong>Instance</strong>.
+<p>
+<img src="/img/snow/request-instance-03.png" width=800 />
+<p>
+Click <strong>Request Instance</strong>.
+<p>
+<img src="/img/snow/request-instance-04.png" width=800 />
+<p>
+Click <strong>London</strong>.
+<p>
+<img src="/img/snow/request-instance-05.png" width=800 />
+<p>
+After requesting the instance, you will be presented with the instance status screen. Take note of the URL then click the link to login.
+<p>
+<img src="/img/snow/request-instance-06.png" width=800 />
+<p>
+You will be prompted to reset your admin password and once you have, you will be at the home dashboard.
+<p>
+<img src="/img/snow/request-instance-07.png" width=800 />
+<p></p>
+
+
+
+            </div>
+            <nav class="sidenav">
+                <section class="sidenav-content">
+                    <section class="nav-group">
+                        <input id="tabexample1" type="checkbox">
+                        <label for="tabexample1">Latest Posts</label>
+                        <ul class="nav-list">
+                            <li><a href="#" class="nav-link">Post 1</a></li>
+                            <li><a href="#" class="nav-link">Post 2</a></li>
+                            <li><a href="#" class="nav-link">Post 3</a></li>
+                            <li><a href="#" class="nav-link">Post 4</a></li>
+                            <li><a href="#" class="nav-link">Post 5</a></li>
+                        </ul>
+                    </section>
+                    <section class="nav-group">
+                        <input id="tabexample2" type="checkbox">
+                        <label for="tabexample2">Tags</label>
+                        <ul class="nav-list">
+                            <li><a href="#" class="nav-link">Tag 1</a></li>
+                            <li><a href="#" class="nav-link">Tag 2</a></li>
+                            <li><a href="#" class="nav-link">Tag 3</a></li>
+                            <li><a href="#" class="nav-link">Tag 4</a></li>
+                        </ul>
+                    </section>
+                    <section class="nav-group">
+                        <input id="tabexample3" type="checkbox">
+                        <label for="tabexample3">Social</label>
+                        <ul class="nav-list">
+                            <li><a href="https://twitter.com/vcixninja" class="nav-link" target="_blank">Twitter</a></li>
+                            <li><a href="https://www.linkedin.com/in/tomburge80/" class="nav-link" target="_blank">LinkedIn</a></li>
+                            <li><a href="https://www.reddit.com/user/vcixninja" class="nav-link" target="_blank">Reddit</a></li>
+                            <li><a href="https://code.vmware.com/user/tburge@vmware.com" class="nav-link" target="_blank">Code@VMware</a></li>
+                        </ul>
+                    </section>
+                </section>
+            </nav>
+        </div>
+    </body>
+</html>
+</div>

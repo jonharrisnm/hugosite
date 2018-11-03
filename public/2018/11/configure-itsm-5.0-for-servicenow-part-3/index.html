@@ -1,0 +1,252 @@
+<div class="main-container">
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel= "stylesheet" type= "text/css" href="/css/clarity-icons.min.css">
+        <link rel= "stylesheet" type= "text/css" href="/css/clarity-ui.min.css">
+        <script type= "text/javascript" src="/js/clarity-icons.min.js"></script>
+        <script type= "text/javascript" src="/js/custom-elements.min.js"></script>
+        <title>VCIX Ninja</title>
+    </head>
+    <body>
+        <header class="header header-7">
+        <div class="branding">
+            <a href="/">
+                <clr-icon shape="bullseye" class="is-solid"></clr-icon>
+            <span class="title">VCIX Ninja</span>
+            </a>
+        </div>
+        <div class="header-nav">
+            <nav class="header-nav">
+            <a href="/" class="nav-link"><span class="nav-text">Home</span></a>
+            <a href="/posts" class="nav-link"><span class="nav-text">Posts</span></a>
+            <a href="/homelab" class="nav-link"><span class="nav-text">HomeLab</span></a>
+            <a href="/about" class="nav-link"><span class="nav-text">About Me</span></a>
+            <a href="https://github.com/tomburge" class="nav-link" target="_blank"><span class="nav-text">GitHub</span></a>
+        </div>
+        <div class="header-actions">
+            <a href="#" class="nav-link nav-icon">
+                <clr-icon shape="cog" class="is-solid"></clr-icon>
+            </a>
+        </div>
+        </header>
+        <div class="content-container" style="margin-left: 20px">
+            <div class="content-area">
+                
+    
+    <h1>Configure ITSM 5.0 for ServiceNow Part 3</h1>
+    11-03-2018
+    <h2>Installing and Configuring Plugin</h2>
+
+<p>Now that we have finished requesting our instance and creating our MID server, we will move onto install and configuring the plugin.</p>
+
+<p><p>
+Here we are starting at the home dashboard.
+<p>
+<img src="/img/snow/install-plugin-01.png" width=800 />
+<p>
+In the upper left filter, type update sets and click <strong>Update Sources</strong>.
+<p>
+<img src="/img/snow/install-plugin-02.png" width=800 />
+<p>
+Click <strong>Choose File</strong> and browse to the XML file you downloaded from the marketplace. Click <strong>Upload</strong>.
+<p>
+<img src="/img/snow/install-plugin-03.png" width=800 />
+<p>
+After the upload completes, you will be redirected to the Update Sets list. Click <strong>VMware vRealize Automation Application</strong>.
+<p>
+<img src="/img/snow/install-plugin-04.png" width=800 />
+<p>
+Click <strong>Preview Update Set</strong>.
+<p>
+<img src="/img/snow/install-plugin-05.png" width=800 />
+<p>
+The Update Set Preview will give an error and this is normal. Click <strong>Close</strong>.
+<p>
+<img src="/img/snow/install-plugin-06.png" width=800 />
+<p>
+Scroll to the bottom of the page and select the check boxes next to the four items. Use the dropdown to select <strong>Accept remote update</strong>.
+<p>
+<img src="/img/snow/install-plugin-07.png" width=800 />
+<p>
+You will receive some messages saying that the problems have been addressed. Click <strong>Commit Update Set</strong>. This is going to take awhile.
+<p>
+<img src="/img/snow/install-plugin-08.png" width=800 />
+<p>
+Click <strong>Update Sources</strong>. You can see that the vRA application is there.
+<p>
+<img src="/img/snow/install-plugin-09.png" width=800 />
+<p>
+Click <strong>Update log</strong>. There are 3011 items that need to complete. When it is done, you will see <strong>Finished update load from database</strong>.
+<p>
+<img src="/img/snow/install-plugin-10.png" width=800 />
+<p>
+In the upper left filter, type script include. Click <strong>Script Includes</strong>. Search for <strong>JSUtil</strong> and click on the name to open it.
+<p>
+<img src="/img/snow/install-plugin-11.png" width=800 />
+<p>
+In the upper right, use the dropdown labeled <strong>Accessible from</strong> and select <strong>All application scopes</strong>. Click <strong>Update</strong>.
+<p>
+<img src="/img/snow/install-plugin-12.png" width=800 />
+<p>
+In the upper left filter, type <strong>tables</strong>. Under <strong>System Definition</strong>, click <strong>Tables</strong>. In the search, type <strong>user_criteria</strong>.
+<p>
+<img src="/img/snow/install-plugin-13.png" width=800 />
+<p>
+Click <strong>User Criteria</strong> to open the item.
+<p>
+<img src="/img/snow/install-plugin-14.png" width=800 />
+<p>
+Make sure all of the following boxes are checked:
+<ul>
+    <li>Can read</li>
+    <li>Can create</li>
+    <li>Can update</li>
+    <li>Can delete</li>
+</ul>
+Click <strong>Update</strong>.
+<p>
+<img src="/img/snow/install-plugin-15.png" width=800 />
+<p>
+Repeat for all of the below tables:
+<ul>
+    <li>user_criteria</li>
+    <li>sc_category_user_criteria_mtom</li>
+    <li>item_option_new</li>
+    <li>catalog_script_client</li>
+    <li>question_choice</li>
+    <li>catalog_ui_policy</li>
+    <li>catalog_ui_policy_action</li>
+    <li>sc_cat_item_user_criteria_mtom</li>
+    <li>sc_req_item</li>
+    <li>sc_category</li>
+</ul>
+<p>
+In the upper left filter, type users.
+Here we are going to configure the users that can access vRealize Automation. I am going to use the admin account, but you can use any account.
+Search for System Administrator and click the user ID.
+Click <strong>Edit</strong> under <strong>Roles</strong>.
+<p>
+<img src="/img/snow/install-plugin-16.png" width=800 />
+<p>
+Search for and add the following roles:
+<ul>
+<li>itil</li>
+<li>x_vmw_vmware_vrasp.vra_user &mdash; <strong>Any user that uses vRA will need this role.</strong></li>
+<li>x_vmw_vmware_vrasp.vrealize_automation_catalog_admin</li>
+</ul>
+Click <strong>Save</strong>.
+<p>
+<img src="/img/snow/install-plugin-17.png" width=800 />
+<p>
+Click <strong>Groups</strong>.
+<p>
+<img src="/img/snow/install-plugin-18.png" width=800 />
+<p>
+ Click <strong>Edit</strong>.
+<p>
+<img src="/img/snow/install-plugin-19.png" width=800 />
+<p>
+Search for <strong>vRealizeAutomation-ApprovalManagersGroup</strong> and add it to the list. Click <strong>Save</strong>.
+<p>
+<img src="/img/snow/install-plugin-20.png" width=800 />
+<p>
+Click <strong>Update</strong>.
+<p>
+<img src="/img/snow/install-plugin-21.png" width=800 />
+<p>
+Before we register vRA into Service Now, we need to create a service account in vRA and add it to all of the business groups as a <strong>Business Group Manager</strong>. Once this is complete, you can continue.
+<p>
+<img src="/img/snow/install-plugin-23.png" width=800 />
+<p>
+In the upper left filter, type vRealize. Click <strong>Register vRAs</strong>.
+<p>
+<img src="/img/snow/install-plugin-24.png" width=800 />
+<p>
+<ul>
+<li>Name: </li>
+<li>HostName: https://[urlofvRA]</li>
+<li>Tenant Name: [Only one tenant is supported per vRA]</li>
+<li>MidServer: [Select the MID server we created earlier.]</li>
+<li>Service User UserName: [Enter the service account in vRA that you created.]</li>
+<li>Service User Password: [Enter the password for that account.]</li>
+</ul>
+Click <strong>Save</strong>.
+<p>
+<img src="/img/snow/install-plugin-25.png" width=800 />
+<p>
+Your instance of vRA is now registered. We have to perform imports of the catalog and CMDB. Click the name of vRA to open it.
+<p>
+<img src="/img/snow/install-plugin-26.png" width=800 />
+<p>
+Click <strong>Import Services and Catalog Items</strong>.
+<p>
+<img src="/img/snow/install-plugin-27.png" width=800 />
+<p>
+Click <strong>Scheduled Imports Queue</strong>. This may take a bit depending on your vRA.
+<p>
+<img src="/img/snow/install-plugin-28.png" width=800 />
+<p>
+Refresh until the queue is empty.
+<p>
+<img src="/img/snow/install-plugin-29.png" width=800 />
+<p>
+Go back into your registered vRA instance and click <strong>Import and Reconcile CMDB</strong>.
+<p>
+<img src="/img/snow/install-plugin-30.png" width=800 />
+<p>
+Click <strong>Scheduled Imports Queue</strong>.
+<p>
+<img src="/img/snow/install-plugin-31.png" width=800 />
+<p>
+Refresh until empty. Click <strong>vRealize Automation User Portal</strong> when clear.
+<p>
+<img src="/img/snow/install-plugin-32.png" width=800 />
+<p>
+Here is the brand new portal for the vRA integration. Prior to this, we could only see catalog items, but now you can see deployments and machines as well as perform day 2 actions. Congrats!
+<p>
+<img src="/img/snow/install-plugin-33.png" width=800 />
+<p></p>
+
+
+
+            </div>
+            <nav class="sidenav">
+                <section class="sidenav-content">
+                    <section class="nav-group">
+                        <input id="tabexample1" type="checkbox">
+                        <label for="tabexample1">Latest Posts</label>
+                        <ul class="nav-list">
+                            <li><a href="#" class="nav-link">Post 1</a></li>
+                            <li><a href="#" class="nav-link">Post 2</a></li>
+                            <li><a href="#" class="nav-link">Post 3</a></li>
+                            <li><a href="#" class="nav-link">Post 4</a></li>
+                            <li><a href="#" class="nav-link">Post 5</a></li>
+                        </ul>
+                    </section>
+                    <section class="nav-group">
+                        <input id="tabexample2" type="checkbox">
+                        <label for="tabexample2">Tags</label>
+                        <ul class="nav-list">
+                            <li><a href="#" class="nav-link">Tag 1</a></li>
+                            <li><a href="#" class="nav-link">Tag 2</a></li>
+                            <li><a href="#" class="nav-link">Tag 3</a></li>
+                            <li><a href="#" class="nav-link">Tag 4</a></li>
+                        </ul>
+                    </section>
+                    <section class="nav-group">
+                        <input id="tabexample3" type="checkbox">
+                        <label for="tabexample3">Social</label>
+                        <ul class="nav-list">
+                            <li><a href="https://twitter.com/vcixninja" class="nav-link" target="_blank">Twitter</a></li>
+                            <li><a href="https://www.linkedin.com/in/tomburge80/" class="nav-link" target="_blank">LinkedIn</a></li>
+                            <li><a href="https://www.reddit.com/user/vcixninja" class="nav-link" target="_blank">Reddit</a></li>
+                            <li><a href="https://code.vmware.com/user/tburge@vmware.com" class="nav-link" target="_blank">Code@VMware</a></li>
+                        </ul>
+                    </section>
+                </section>
+            </nav>
+        </div>
+    </body>
+</html>
+</div>
