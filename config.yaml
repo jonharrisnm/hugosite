@@ -11,3 +11,5 @@ theme: "claritylight"
 
 permalinks:
   posts: /:year/:month/:title/
+
+sectionPagesMenu: "main"
