@@ -6,9 +6,9 @@ draft: false
 
 This is where I will lay out all of the info for my homelab.<p>
 
-Current Hardware:<p>
+<h3>Current Hardware:</h3><p>
 
-Hosts:<p>
+<h4>Hosts:</h4><p>
 
 3 x Dell PowerEdge R720s<p>
     Each has:<p>
@@ -30,7 +30,7 @@ Hosts:<p>
         <li>Dual 10GB ethernet
         </ul>
 
-Network:<p>
+<h4>Network:</h4><p>
 
 <ul>
 <li>1 x UniFi Security Gateway 3P
@@ -38,7 +38,7 @@ Network:<p>
 <li>1 x UniFi Switch 48 POE-500W
 </ul>
 
-Software:<p>
+<h4>Software:</h4><p>
 
 <ul>
 <li>vSphere 6.7U1
@@ -55,7 +55,7 @@ Software:<p>
 <li>Horizon 7.6
 </ul>
 
-OS:<p>
+<h4>OS:</h4><p>
 
 <ul>
 <li>Windows 2016
