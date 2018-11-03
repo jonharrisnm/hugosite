@@ -10,8 +10,8 @@ This is where I will lay out all of the info for my homelab.<p>
 
 <h4>Hosts:</h4><p>
 
-3 x Dell PowerEdge R720s<p>
-    Each has:<p>
+3 x Dell PowerEdge R720s
+    Each has:
         <ul>
         <li>2 x Intel E5-2660 @ 2.2Ghz
         <li>192GB ram
@@ -20,8 +20,8 @@ This is where I will lay out all of the info for my homelab.<p>
         <li>Dual 10GB ethernet
         </ul>
 
-3 x SuperMicro Sys-E300-8Ds<p>
-    Each has:<p>
+3 x SuperMicro Sys-E300-8Ds
+    Each has:
         <ul>
         <li>1 x Intel D-1518 @ 2.2Ghz
         <li>64GB ram
