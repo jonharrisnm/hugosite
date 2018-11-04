@@ -1,8 +1,14 @@
 ---
 title: "Configure ITSM 5.0 for ServiceNow Part 2"
+author: "Tom Burge"
 date: 2018-11-03T11:32:16-05:00
 draft: false
 type: "post"
+tags:
+- vmware
+- snow
+- vra
+- itsm
 ---
 <h2>Installing Mid Server</h2>
 

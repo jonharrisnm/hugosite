@@ -50,10 +50,15 @@
                         <input id="tabexample2" type="checkbox">
                         <label for="tabexample2">Tags</label>
                         <ul class="nav-list">
+                            {{ range $name, $taxonomy := $.Site.Taxonomies.tags }}
+                                <li><a href="{{ "/tags/" | relLangURL }}{{ $name | urlize }}">{{ $name }}</a></li>
+                            {{ end }}
+                            <!--
                             <li><a href="#" class="nav-link">Tag 1</a></li>
                             <li><a href="#" class="nav-link">Tag 2</a></li>
                             <li><a href="#" class="nav-link">Tag 3</a></li>
                             <li><a href="#" class="nav-link">Tag 4</a></li>
+                            -->
                         </ul>
                     </section>
                     <section class="nav-group">
