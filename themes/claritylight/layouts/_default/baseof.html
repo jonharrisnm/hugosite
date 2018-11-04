@@ -39,11 +39,16 @@
                         <input id="tabexample1" type="checkbox">
                         <label for="tabexample1">Latest Posts</label>
                         <ul class="nav-list">
+                            {{ range first 5 (where .Data.Pages.ByDate.Reverse "Type" "post") }}
+                                <li><a href="{{ .Permalink }}">{{ .Title }}</a></li>
+                            {{ end }}
+                            <!--
                             <li><a href="#" class="nav-link">Post 1</a></li>
                             <li><a href="#" class="nav-link">Post 2</a></li>
                             <li><a href="#" class="nav-link">Post 3</a></li>
                             <li><a href="#" class="nav-link">Post 4</a></li>
                             <li><a href="#" class="nav-link">Post 5</a></li>
+                            -->
                         </ul>
                     </section>
                     <section class="nav-group">
