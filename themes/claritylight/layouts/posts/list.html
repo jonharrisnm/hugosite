@@ -1,9 +1,0 @@
-{{ define "main" }}
-
-    {{ range first 5 (where .Data.Pages "Type" "post") }}
-    <li>
-    <a href="{{.Permalink}}">{{.Date.Format "01-02-2006"}} | {{.Title}}</a>
-    </li>
-    {{ end }}
-
-{{ end }}
