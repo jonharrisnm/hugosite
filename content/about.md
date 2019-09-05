@@ -1,7 +1,7 @@
 ---
 title: "About"
 date: 2019-09-05T12:45:54-05:00
-draft: true
+draft: false
 ---
 # Jon Harris
 ## About me:
