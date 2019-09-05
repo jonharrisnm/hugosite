@@ -1,6 +1,6 @@
 ---
 title: "{{ replace .Name "-" " " | title }}"
-author: "Tom Burge"
+author: "Jon Harris"
 date: {{ .Date }}
 draft: true
 type: "post"
