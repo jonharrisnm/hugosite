@@ -1,12 +1,12 @@
 ---
 title: "About"
 date: 2018-10-30T13:12:54-05:00
-draft: false
+draft: true
 ---
-# Tom Burge
+# Jon Harris
 ## About me:
 
-I have been been IT for several years and I'm a virtualization enthusiast. I'm very passionate about automation and making life more efficient.
+Add text about me
 
 ## Certs:
 <p>
